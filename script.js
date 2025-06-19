@@ -1,4 +1,4 @@
-
+const myLibrary = [];
 //pop up form buttons
 function openForm() {
   document.getElementById("book-div").style.display = "block";
@@ -18,8 +18,6 @@ function closeForm() {
   blurDivClose.style.zIndex = "-1"; 
 }
 
-//books
-const myLibrary = [];
 
 function saveLibraryToLocalStorage() {
   localStorage.setItem("myLibrary", JSON.stringify(myLibrary));
