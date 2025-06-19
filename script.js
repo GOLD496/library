@@ -1,4 +1,4 @@
-t
+
 //pop up form buttons
 function openForm() {
   document.getElementById("book-div").style.display = "block";
