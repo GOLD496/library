@@ -24,76 +24,22 @@
     </nav>   
     <div class="container">
 
-        <div class="slide">
-
-            
-            <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
-                <div class="content">
-                    <div class="name">Switzerland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                    <button>See More</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);">
-                <div class="content">
-                    <div class="name">Finland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                    <button>See More</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
-                <div class="content">
-                    <div class="name">Iceland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                    <button>See More</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
-                <div class="content">
-                    <div class="name">Australia</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                    <button>See More</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
-                <div class="content">
-                    <div class="name">Netherland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                    <button>See More</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
-                <div class="content">
-                    <div class="name">Ireland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                    <button>See More</button>
-                </div>
-            </div>
-            <div class="item" style="background-image:url(images/goat.jpg);"></div>
-
-        </div>
-
-        <div class="button">
-            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-
     </div>
     <div class="book-form" id="book-div">
-            <form class="form-container">
+            <form class="form-container"  onsubmit="addBookToLibrary(event)">
                 <h2>ADD NEW BOOk</h2>
 
-                <label for="author"><b>Author's Name</b></label>
-                <input type="text" placeholder="Enter Authours Name" name="author" required>
+                <label for="Author"><b>Author's Name</b></label>
+                <input type="text" placeholder="Enter Authours Name" name="author" id="Author" required>
 
-                <label for="book-title"><b>Title</b></label>
-                <input type="text" placeholder="Enter Title" name="book-title" required>
+                <label for="Book-title"><b>Title</b></label>
+                <input type="text" placeholder="Enter Title" name="book-title" id="Book-title" required>
 
-                <label for="book-img"><b>Cover</b></label>
-                <input type="file" placeholder="Enter BOOk Cover" name="book-img" required>
+                <label for="Book-cover"><b>Cover</b></label>
+                <input type="text" placeholder="Enter BOOk Cover url" name="book-img" id="Book-cover" required>
 
-                <label for="book-discription"><b>Book description</b></label>
-                <input type="text" placeholder="Book description" name="book-discription" required>
+                <label for="Book-description"><b>Book description</b></label>
+                <input type="text" placeholder="Book description" name="book-discription" id="Book-description"required>
 
                 <button type="submit" class="btn">ADD</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
